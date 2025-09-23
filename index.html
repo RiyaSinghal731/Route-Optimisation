@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TSP Map Project</title>
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<style>
+  body, html { margin:0; padding:0; height:100%; font-family: sans-serif; }
+  #map { height: 80%; width: 100%; }
+  #controls { height: 20%; padding:10px; display:flex; flex-direction: column; justify-content: space-around; background:#f0f0f0; }
+  #controls input[type=text]{ padding:5px; width:50%; margin-bottom:5px; }
+  #buttons { display:flex; gap:10px; }
+  button { padding:10px 15px; cursor:pointer; }
+  #pointsList { max-height:50px; overflow:auto; margin-top:5px; font-size:14px; }
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="controls">
+  <input type="text" id="searchBox" placeholder="Search location and press Enter">
+  <div id="buttons">
+    <button id="btnSolveJS">Solve Route</button>
+    <button id="btnClear">Clear All</button>
+    <button id="btnUndo">Undo</button>
+  </div>
+  <div id="routeInfo">No route yet</div>
+  <ol id="pointsList"></ol>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Your app.js -->
+<script src="app.js"></script>
+</body>
+</html>
+
+

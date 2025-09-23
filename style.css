@@ -1,0 +1,11 @@
+body { margin: 0; font-family: Arial, sans-serif; color: #222; }
+header { background: #0a6; color: white; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; }
+#mapContainer { position: relative; height: 70vh; }
+#map { width: 100%; height: 100%; }
+#searchBox { position: absolute; top: 10px; left: 10px; z-index: 1000; padding: 6px 8px; width: 250px; border-radius: 6px; border: 1px solid #ccc; }
+#controls { display: flex; gap: 8px; justify-content: center; padding: 8px; background: #f7f7f7; }
+button { padding: 8px 12px; border-radius: 6px; border: 1px solid #ccc; cursor: pointer; }
+#info { padding: 10px 16px; background: #f7f7f7; }
+#pointsList { max-height: 120px; overflow-y: auto; }
+#routeInfo { margin-bottom: 8px; }
+
